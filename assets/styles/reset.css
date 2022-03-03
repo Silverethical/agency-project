@@ -31,4 +31,5 @@ footer, header, hgroup, menu, nav, section {
 * {
 	text-decoration: none;
 	color: inherit;
+	list-style: none;
 }
