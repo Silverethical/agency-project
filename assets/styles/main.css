@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1150px;
     margin: 10px auto;
 }
 
@@ -22,6 +22,7 @@ hr {
 
 /* START: header */
 header > .container {
+    max-width: 1000px;
     background-color: black; /*to be removed*/
     display: flex;
     align-items: center;
@@ -124,6 +125,92 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 /* END: : section 1 */
 
 /* START: section 2 */
+#section2 {
+    margin: 50px 0;
+    padding: 130px 0;
+    text-align: center;
+    height: 800px;
+    background: url("../images/home/section2-bg.jpg") no-repeat 0 0;
+}
+
+#section2-top > span {
+    color: #3D3950;
+    font-size: 52px;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0 8px;
+}
+
+#section2-top > span:last-of-type {
+    font-weight: bold;
+}
+
+#section2-middle {
+    text-align: left;
+    margin: 80px 0;
+}
+
+#section2-middle > span {
+    display: block;
+    margin-bottom: 40px;
+    color: #3E3B51;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#section2-middle > p {
+    color: #758590;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 36px;
+}
+
+#section2-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section2-bottom > ul > li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#section2-bottom > ul > li:last-of-type {
+    margin-right: 0;
+}
+
+#section2-bottom > ul > li > a {
+    background-color: #F0F3F2;
+}
+
+#section2-bottom > ul > li > a > p {
+    line-height: 24px;
+    color: #6F808C;
+    background-color: #F0F3F2;
+    padding: 38px 48px;
+    transition-property: color, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section2-bottom > ul > li > a > p:first-of-type {
+    color: #434157;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 0;
+}
+
+#section2-bottom > ul > li > a > p > img {
+    width: 50px;
+}
+
+#section2-bottom > ul > li > a:hover > p {
+    background-color: #3F4163;
+    color: white;
+}
+
 /* END: : section 2 */
 
 /* START: section 3 */
