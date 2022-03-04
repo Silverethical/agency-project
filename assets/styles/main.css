@@ -204,6 +204,7 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 
 #section2-bottom > ul > li > a > p > img {
     width: 50px;
+    filter: invert(10%) sepia(90%) saturate(5268%) hue-rotate(245deg) brightness(109%) contrast(155%);
 }
 
 #section2-bottom > ul > li > a:hover > p {
@@ -220,6 +221,108 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 /* END: : section 4 */
 
 /* START: section 5 */
+#section5 {
+    color: #B6C6C9;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+video.fullscreen {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width:101%;
+    height:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+
+#section5-top > span {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0 3px;
+}
+
+#section5-top > span:last-of-type {
+    font-weight: bold;
+}
+
+#section5-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+
+#section5-bottom > div:first-of-type {
+    text-align: left;
+}
+
+#section5-bottom > div:first-of-type > span {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 50px 0;
+}
+
+#section5-bottom > div:first-of-type > span:first-of-type {
+    margin-top: 0;
+}
+
+#section5-bottom > div:first-of-type > p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+#section5-bottom > div:first-of-type > a {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #CE93D8;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 26px 50px;
+    border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section5-bottom > div:first-of-type > a:hover {
+    background-color: #90B5C0;
+}
+
+#section5-bottom > div:last-of-type > div {
+    margin-bottom: 40px;
+}
+
+#section5-bottom > div:last-of-type > div > p {
+    display: inline-block;
+    background-color: #253a4bd7;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 100;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    margin-right: 40px;
+    width: 250px;
+    height: 210px;
+}
+
+#section5-bottom > div:last-of-type > div > p:last-of-type {
+    margin-right: 0;
+}
+
+#section5-bottom > div:last-of-type > div > p > img {
+    opacity: 0.7;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+#section5-bottom > div:last-of-type > div > p > span {
+    font-weight: bold;
+}
 /* END: : section 5 */
 
 /* START: section 6 */
