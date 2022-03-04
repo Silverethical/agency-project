@@ -218,6 +218,64 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 /* END: : section 3 */
 
 /* START: section 4 */
+#section4 {
+    text-align: center;
+    background: url("../images/home/section4-bg.jpg") no-repeat 0 0;
+    background-size: cover;
+    padding: 160px 0;
+}
+
+#section4-top > span {
+    color: #3E3B51;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0 4px;
+}
+
+#section4-top > span:last-of-type {
+    font-weight: bold;
+}
+
+#section4-top > p {
+    color: #6B7D88;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 36px;
+    margin-top: 40px;
+}
+
+#section4-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#section4-bottom > div {
+    position: relative;
+}
+
+#section4-bottom > div > img {
+    position: absolute;
+    top: 38%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#section4-bottom > div > p:first-of-type {
+    position: relative;
+    color: #99A9B5;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 70px 0;
+}
+
+#section4-bottom > div > p:last-of-type {
+    position: relative;
+    color: #778592;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 100;
+}
 /* END: : section 4 */
 
 /* START: section 5 */
