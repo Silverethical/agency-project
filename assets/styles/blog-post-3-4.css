@@ -1,4 +1,124 @@
+/* General CSS */
+body {
+    font: 14px montserrat, sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 10px auto;
+}
+
+.search-icon {
+    width: 20px;
+    vertical-align: middle;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
 /* START: header */
+header > .container {
+    max-width: 1000px;
+    background-color: black; /*to be removed*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 170px;
+}
+
+header > .container > nav > ul > li {
+    display: inline-flex;
+    color: white;
+    font-weight: 600;
+    margin-right: -4px;
+    position: relative;
+    padding: 20px;
+}
+
+header > .container > nav:last-of-type > ul > li:last-of-type {
+    padding: 17px 10px;
+}
+
+header > .container > nav > ul > li:hover {
+    color: #ce93d8;
+}
+
+header > .container > nav > ul > li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: max-content;
+    font-weight: normal;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: visibility, opacity;
+    transition-delay: .2s;
+    transition-duration: .35s;
+    transition-timing-function: ease-in;
+}
+
+header > .container > nav > ul > li > ul > li > a {
+    color: rgb(95, 95, 95);
+    background-color: #f5f5f5;
+    display: block;
+    padding: 18px 0;
+    padding-left: 30px;
+    min-width: 200px;
+}
+
+header > .container > nav > ul > li > ul > li:hover > a {
+    color: black;
+    background-color: white;
+    border-left: 3px solid #ce93d8;
+    padding-left: 27px;
+}
+
+header > .container > nav > ul > li > div {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: visibility, opacity;
+    transition-delay: .2s;
+    transition-duration: .35s;
+    transition-timing-function: ease-in;
+}
+
+header > .container > nav > ul > li > div > input {
+    display: inline-block;
+    color: black;
+    background-color: #F4F6F7;
+    font-size: 15px;
+    padding: 6px 38px 6px 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    outline: none;
+    min-height: 28px;
+    min-width: 200px;
+}
+
+header > .container > nav > ul > li > div > a {
+    display: inline-block;
+    padding: 6px;
+    position: absolute;
+    top: 28%;
+    right: 8%;
+}
+
+header > .container > nav > ul > li:hover > ul, header > .container > nav > ul > li:hover > div {
+    visibility: visible;
+    opacity: 1;
+}
 /* END: : header */
 
 /* START: section 1 */
