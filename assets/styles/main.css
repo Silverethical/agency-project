@@ -437,8 +437,29 @@ video.fullscreen {
     font-size: 13px;
     font-weight: 100;
 }
-
 /* END: : section 6 */
 
 /* START: footer */
+footer #map {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --main-bg-color: #23254c;
+    --main-bg-color-08: rgba(35,37,76,.8);
+    --styled-bg-color: #393b5e;
+    font-family: source sans pro;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: none;
+    color: #99a9b5;
+    height: 896px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border: none;
+    pointer-events: none;
+}
 /* END: : footer */
