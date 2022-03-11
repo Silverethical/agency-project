@@ -5,7 +5,7 @@ body {
 
 .container {
     max-width: 1150px;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 .search-icon {
@@ -18,6 +18,10 @@ hr {
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 0;
+}
+
+.fa-thin {
+    color: #CE93D8;
 }
 
 /* START: header */
@@ -440,7 +444,50 @@ video.fullscreen {
 /* END: : section 6 */
 
 /* START: footer */
-footer #map {
+#footer-top {
+    position: relative;
+}
+
+#footer-top > div {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#footer-top > div > div:first-of-type {
+    margin-right: 60px;
+}
+
+#footer-top > div > div:last-of-type {
+    margin-left: 60px;
+}
+
+#footer-top > div > div > div {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+#footer-top > div > div > div > span {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#footer-top > div > div > div > p {
+    color: #84929D;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 100;
+}
+
+#footer-top #map {
+    position: absolute;
+    z-index: -1;
+    top: 0;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     --main-bg-color: #23254c;
