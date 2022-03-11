@@ -126,11 +126,12 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 
 /* START: section 2 */
 #section2 {
-    margin: 50px 0;
+    margin-top: 50px;
     padding: 130px 0;
     text-align: center;
     height: 800px;
     background: url("../images/home/section2-bg.jpg") no-repeat 0 0;
+    background-size: cover;
 }
 
 #section2-top > span {
@@ -384,6 +385,59 @@ video.fullscreen {
 /* END: : section 5 */
 
 /* START: section 6 */
+#section6 {
+    background: url("../images/home/rocket_bg.jpg") no-repeat 0 0;
+    background-size: cover;
+    padding: 160px 0;
+}
+
+#section6-top > div:first-of-type {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#section6-top > div:first-of-type > span {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#section6-top > div:first-of-type > span:first-of-type {
+    font-weight: 100;
+}
+
+#section6-top > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section6-top > div:last-of-type > a {
+    background-color: white;
+    width: 290px;
+    height: 340px;
+    padding: 40px;
+    border-bottom: 5px solid #ce93d8;
+}
+
+#section6-top .team-person-image {
+    border-radius: 50%;
+    width: 130px;
+}
+
+#section6-top .team-person-info > p:first-of-type {
+    color: #5C5A6D;
+    font-size: 22px;
+    font-weight: 100;
+    margin: 30px 0;
+}
+
+#section6-top .team-person-info > p:last-of-type {
+    color: #909497;
+    font-size: 13px;
+    font-weight: 100;
+}
+
 /* END: : section 6 */
 
 /* START: footer */
