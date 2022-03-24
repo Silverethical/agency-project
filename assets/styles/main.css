@@ -26,11 +26,10 @@ hr {
 
 /* START: header */
 header > .container {
-    max-width: 1000px;
-    background-color: black; /*to be removed*/
+    background-color: royalblue; /*to be removed*/
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #logo {
@@ -62,7 +61,7 @@ header > .container > nav > ul > li > ul {
     font-weight: normal;
     visibility: hidden;
     opacity: 0;
-    transition-property: visibility, opacity;
+    transition-property: all;
     transition-delay: .2s;
     transition-duration: .35s;
     transition-timing-function: ease-in;
@@ -92,7 +91,7 @@ header > .container > nav > ul > li > div {
     padding: 20px;
     visibility: hidden;
     opacity: 0;
-    transition-property: visibility, opacity;
+    transition-property: all;
     transition-delay: .2s;
     transition-duration: .35s;
     transition-timing-function: ease-in;
@@ -172,7 +171,7 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 
 #section2-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -194,7 +193,7 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
     color: #6F808C;
     background-color: #F0F3F2;
     padding: 38px 48px;
-    transition-property: color, background-color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
@@ -348,7 +347,7 @@ video.fullscreen {
     font-weight: 600;
     padding: 26px 50px;
     border-radius: 50px;
-    transition-property: background-color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
@@ -416,17 +415,31 @@ video.fullscreen {
     justify-content: space-between;
 }
 
-#section6-top > div:last-of-type > a {
+#section6-top > div:last-of-type > div {
+    position: relative;
     background-color: white;
-    width: 290px;
-    height: 340px;
+    width: 24%;
+    height: 310px;
     padding: 40px;
     border-bottom: 5px solid #ce93d8;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
 }
 
-#section6-top .team-person-image {
+#section6-top > div:last-of-type .team-person-image {
     border-radius: 50%;
     width: 130px;
+}
+
+#section6-top > div:last-of-type > div > .big-btns {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #section6-top .team-person-info > p:first-of-type {
@@ -434,6 +447,9 @@ video.fullscreen {
     font-size: 22px;
     font-weight: 100;
     margin: 30px 0;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
 }
 
 #section6-top .team-person-info > p:last-of-type {
@@ -441,6 +457,113 @@ video.fullscreen {
     font-size: 13px;
     font-weight: 100;
 }
+
+#section6-top > div:last-of-type > div:hover {
+    background-color: rgb(57, 59, 94);
+}
+
+#section6-top > div:last-of-type > div:hover > div > p:first-of-type {
+    color: #ce93d8;
+}
+
+#section6-top > div:last-of-type > div > .small-btns > div {
+    margin-top: 12px;
+}
+
+#section6-top > div:last-of-type > div > .small-btns > div:first-of-type > .tell-btns {
+    position: relative;
+    color: #CE93D8;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#section6-top > div:last-of-type > div > .small-btns > .social-media-btns > a {
+    display: inline-block;
+    position: relative;
+    padding: 0 5px;
+    font-size: 15px;
+    color: #909497;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section6-top > div:last-of-type > div > .small-btns > div:last-of-type {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+#section6-top > div:last-of-type > div > .small-btns > div:last-of-type > a {
+    color: #909497;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section6-top > div:last-of-type > div > .small-btns > div a:hover {
+    color: #fff;
+}
+
+#section6-bottom > div:first-of-type {
+    margin-top: 270px;
+    display: flex;
+    justify-content: space-between;
+    color: #f0f3f2;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+#section6-bottom > #skill-bars {
+    color: #23254c;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+#section6-bottom > #skill-bars > div {
+    background-color: #393b5e;
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 26px;
+}
+
+#section6-bottom > #skill-bars > div:last-of-type {
+    margin-bottom: 0;
+}
+
+#section6-bottom > #skill-bars > div > div {
+    padding: 10px 20px 8px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+#section6-bottom > #skill-bars > div > div > span:last-of-type {
+    color: #f0f3f2;
+    margin-left: 8px;
+}
+
+#section6-bottom > #skill-bars > .skill-50 > div {
+    background-color: rgb(206, 147, 216);
+    width: 50%;
+}
+
+#section6-bottom > #skill-bars > .skill-75 > div {
+    background-color: rgb(129, 212, 250);
+    width: 75%;
+}
+
+#section6-bottom > #skill-bars > .skill-80 > div {
+    background-color: rgb(255, 204, 128);
+    width: 80%;
+}
+
+#section6-bottom > #skill-bars > .skill-65 > div {
+    background-color: rgb(229, 115, 115);
+    width: 65%;
+}
+
 /* END: : section 6 */
 
 /* START: footer */
@@ -569,7 +692,7 @@ footer {
     padding: 10px 164px;
     border-radius: 4px;
     background-color: #CE93D8;
-    transition-property: color, background-color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
@@ -592,7 +715,7 @@ footer {
     padding: 9px 15px;
     border-radius: 0 3px 3px 0;
     background-color: #CE93D8;
-    transition-property: color, background-color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
@@ -642,7 +765,7 @@ footer {
 #footer-bottom > .container > div > nav > ul > li > a {
     color: #99a9b5;
     padding: 10px 20px;
-    transition-property: color;
+    transition-property: all;
     transition-duration: .3s;
     transition-timing-function: ease-in;
 }
@@ -654,7 +777,7 @@ footer {
 #footer-bottom > .container > div:last-of-type > a {
     padding: 0 5px;
     font-size: 15px;
-    transition-property: color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
