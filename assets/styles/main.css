@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 1150px;
+    max-width: 61%;
     margin: 0 auto;
 }
 
@@ -453,6 +453,8 @@ footer {
     justify-content: center;
     padding: 60px 0;
     background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    width: 100%;
 }
 
 #footer-top > div > div:first-of-type {
@@ -545,9 +547,16 @@ footer {
     margin-bottom: 16px;
 }
 
-#footer-middle > .container > div > input:last-of-type {
-    min-height: 86px;
+#footer-middle > .container > div > textarea {
+    display: block;
+    max-width: 350px;
+    background-color: #665387;
+    font-size: 15px;
+    padding: 7px;
+    border: 1px solid #a29cb7;
+    border-radius: 3px;
     margin-bottom: 26px;
+    outline: none;
 }
 
 #footer-middle > .container > div:last-of-type > div > input {
@@ -653,6 +662,5 @@ footer {
 #footer-bottom > .container > div:last-of-type > a:hover {
     color: #fff;
 }
-
 
 /* END: : footer */
