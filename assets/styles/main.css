@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 61%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -132,7 +132,6 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
     margin-top: 50px;
     padding: 130px 0;
     text-align: center;
-    height: 800px;
     background: url("../images/home/section2-bg.jpg") no-repeat 0 0;
     background-size: cover;
 }
@@ -219,6 +218,117 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 /* END: : section 2 */
 
 /* START: section 3 */
+#section3 {
+    text-align: center;
+    color: white;
+    background: url("../images/home/latestwork-bg.jpg") no-repeat 0 0;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+#section3-top > span {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+#section3-top > span:last-of-type {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#section3-middle {
+    margin: 80px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#section3-middle > div {
+    position: relative;
+}
+
+#section3-middle > div > img {
+    width: 635px;
+}
+
+#section3-middle > div > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+}
+
+#section3-middle > div:hover > a {
+    background-color: rgba(21, 116, 206, 0.5);
+}
+
+#section3-middle > div > span {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#section3-middle > div > div {
+    text-align: left;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+}
+
+#section3-middle > div:hover > div {
+    visibility: visible;
+    opacity: 1;
+}
+
+#section3-middle > div > div > a > i {
+    padding: 0 7px;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section3-middle > div > div > a:hover > i {
+    transform: scale(1.3);
+}
+
+#section3-middle > div > div > hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 15px;
+    width: 570px;
+}
+
+#section3-bottom > a {
+    display: inline-block;
+    background-color: #CE93D8;
+    font-size: 19px;
+    font-weight: 100;
+    padding: 15px 30px;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section3-bottom > a:hover {
+    color: #CE93D8;
+    background-color: white;
+}
+
+
 /* END: : section 3 */
 
 /* START: section 4 */
@@ -391,6 +501,7 @@ video.fullscreen {
 #section6 {
     background: url("../images/home/rocket_bg.jpg") no-repeat 0 0;
     background-size: cover;
+    background-position: center;
     padding: 160px 0;
 }
 
