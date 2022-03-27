@@ -25,8 +25,11 @@ hr {
 }
 
 /* START: header */
+header {
+    background-color: #7d199c;
+}
+
 header > .container {
-    background-color: royalblue; /*to be removed*/
     display: flex;
     align-items: center;
     justify-content: space-around;

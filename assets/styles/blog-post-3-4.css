@@ -4,8 +4,8 @@ body {
 }
 
 .container {
-    max-width: 1150px;
-    margin: 10px auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .search-icon {
@@ -20,13 +20,19 @@ hr {
     margin: 0;
 }
 
+.fa-thin {
+    color: #CE93D8;
+}
+
 /* START: header */
+header {
+    background-color: #7d199c;
+}
+
 header > .container {
-    max-width: 1000px;
-    background-color: black; /*to be removed*/
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #logo {
@@ -58,7 +64,7 @@ header > .container > nav > ul > li > ul {
     font-weight: normal;
     visibility: hidden;
     opacity: 0;
-    transition-property: visibility, opacity;
+    transition-property: all;
     transition-delay: .2s;
     transition-duration: .35s;
     transition-timing-function: ease-in;
@@ -88,7 +94,7 @@ header > .container > nav > ul > li > div {
     padding: 20px;
     visibility: hidden;
     opacity: 0;
-    transition-property: visibility, opacity;
+    transition-property: all;
     transition-delay: .2s;
     transition-duration: .35s;
     transition-timing-function: ease-in;
@@ -121,11 +127,60 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 }
 /* END: : header */
 
+
 /* START: section 1 */
+#section1 {
+    color: white;
+    text-align: center;
+    padding: 370px 0;
+    background: url("../images/blog-post-3-4/3-7-bg.jpg") no-repeat -300px 0;
+    background-size: auto;
+}
+
+#section1 > span {
+    font-size: 120px;
+    font-weight: 100;
+}
+
+#section1 > span:last-of-type {
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#section1 > p {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+
 /* END: : section 1 */
 
+
 /* START: section 2 */
+#section2 {
+    color: white;
+    background-color: #23254c;
+}
+
+#section2-middle > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section2-middle > div > div > a > img {
+    width: 570px;
+}
 /* END: : section 2 */
+
+
+/* START: section 3 */
+#section3 {
+    background-color: #23254c;
+}
+/* END: : section 3 */
+
 
 /* START: footer */
 footer {
@@ -253,7 +308,7 @@ footer {
     padding: 10px 164px;
     border-radius: 4px;
     background-color: #CE93D8;
-    transition-property: color, background-color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
@@ -276,7 +331,7 @@ footer {
     padding: 9px 15px;
     border-radius: 0 3px 3px 0;
     background-color: #CE93D8;
-    transition-property: color, background-color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
@@ -326,7 +381,7 @@ footer {
 #footer-bottom > .container > div > nav > ul > li > a {
     color: #99a9b5;
     padding: 10px 20px;
-    transition-property: color;
+    transition-property: all;
     transition-duration: .3s;
     transition-timing-function: ease-in;
 }
@@ -338,7 +393,7 @@ footer {
 #footer-bottom > .container > div:last-of-type > a {
     padding: 0 5px;
     font-size: 15px;
-    transition-property: color;
+    transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
