@@ -1,6 +1,7 @@
 /* General CSS */
 body {
     font: 14px montserrat, sans-serif;
+    background-color: #23254c;
 }
 
 .container {
@@ -26,7 +27,7 @@ hr {
 
 /* START: header */
 header {
-    background-color: #7d199c;
+    background-color: #23254c;
 }
 
 header > .container {
@@ -133,8 +134,8 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
     color: white;
     text-align: center;
     padding: 370px 0;
-    background: url("../images/blog-post-3-4/3-7-bg.jpg") no-repeat -300px 0;
-    background-size: auto;
+    background: url("../images/blog-post-3-4/3-7-bg.jpg") no-repeat 0 0;
+    background-size: cover;
 }
 
 #section1 > span {
@@ -161,16 +162,195 @@ header > .container > nav > ul > li:hover > ul, header > .container > nav > ul >
 /* START: section 2 */
 #section2 {
     color: white;
-    background-color: #23254c;
+    font-weight: 100;
+}
+
+#section2-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+
+#section2-top > div:first-of-type > span:first-of-type {
+    padding-right: 10px;
+}
+
+#section2-top > div:first-of-type > span:last-of-type {
+    padding-left: 10px;
+}
+
+#section2-top > div:first-of-type > a {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding: 0 10px;
+    color: #CE93D8;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+}
+
+#section2-top > div:last-of-type > a {
+    padding: 0 7px;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+}
+
+#section2-top > div:last-of-type > a:first-of-type {
+    color: #f44336;
+}
+
+#section2-top > div > a:hover {
+    color: #4c545a !important;
 }
 
 #section2-middle > div {
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
 }
 
+#section2-middle > div > div {
+    max-width: 580px;
+}
+
 #section2-middle > div > div > a > img {
-    width: 570px;
+    max-width: 580px;
+}
+
+#section2-middle > div > div > h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 580px;
+    margin-bottom: 20px;
+}
+
+#section2-middle > div > div > p {
+    color: #99a9b5;
+    word-wrap: normal;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+#section2-middle-1 > div > ul {
+    margin-top: 15px;
+    color: #99a9b5;
+    line-height: 30px;
+}
+
+#section2-middle-1 > div > ul > li::before {
+    display: inline-block;
+    font-family: "Font Awesome 6 Pro";
+    content: "\f0da";
+    font-size: 15px;
+    padding-right:10px;
+    color: #ba4f95;
+}
+
+#section2-middle-2 > div > p {
+    display: inline-block;
+    max-width: 48%;
+}
+
+#section2-middle-2 > div > p:last-of-type {
+    margin-left: 3%;
+}
+
+#section2-middle-2 > div > p > span {
+    position: relative;
+    display: inline-block;
+}
+
+#section2-middle-2 > div > p > span > i {
+    color: #5393ff;
+    font-size: 60px;
+}
+
+#section2-middle-2 > div > p > span > span {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#section2-middle-3 > div > div {
+    margin-top: 30px;
+}
+
+#section2-middle-3 > div > div > div {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border: solid 2px #313646;
+    margin-top: -1px;
+    font-size: 24px;
+    color: #5379e3;
+}
+
+#section2-middle-3 > div > div > div:first-of-type {
+    margin-top: 0;
+    color: #ce93d8;
+}
+
+#section2-middle-3 > div > div > div:last-of-type {
+    color: #7668c1;
+}
+
+#section2-middle-3 > div > div > div > i {
+    font-size: 50px;
+    margin: 0 30px;
+}
+
+#section2-middle-3 > div > div > div > p {
+    display: inline-block;
+}
+
+
+#section2-bottom > div:first-of-type > a {
+    text-align: center;
+    display: inline-block;
+    min-width: 80px;
+    position: relative;
+    font-size: 12px;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section2-bottom > div:first-of-type > a:hover {
+    color: #23254c;
+}
+
+#section2-bottom > div:first-of-type > a > img {
+    filter: invert(98%) sepia(89%) saturate(4126%) hue-rotate(241deg) brightness(80%) contrast(82%);
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#section2-bottom > div:last-of-type {
+    margin: 40px 0;
+}
+
+#section2-bottom > div:last-of-type > a {
+    padding: 0 5px;
+    font-size: 15px;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+#section2-bottom > div:last-of-type > a:hover {
+    color: #5379e3;
 }
 /* END: : section 2 */
 
