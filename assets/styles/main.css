@@ -217,7 +217,7 @@ header > .container > nav > ul > li:hover > div {
 
 #section2-bottom > div {
   position: relative;
-  color: rgb(95, 114, 127);
+  color: rgb(60, 57, 80);
   background-color: #f0f3f2;
   padding: 40px 0;
   max-width: 30%;
@@ -231,7 +231,6 @@ header > .container > nav > ul > li:hover > div {
 }
 
 #section2-bottom > div > h2 {
-  color: rgb(60, 57, 80);
   width: 80%;
   margin: 20px auto 15px;
   font-size: 25px;
@@ -240,11 +239,15 @@ header > .container > nav > ul > li:hover > div {
 }
 
 #section2-bottom > div > p {
+  color: rgb(95, 114, 127);
   font-weight: 100;
   line-height: 24px;
   max-width: 80%;
   margin: 0 auto;
   word-wrap: normal;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
 }
 
 #section2-bottom > div > a {
@@ -258,6 +261,11 @@ header > .container > nav > ul > li:hover > div {
 #section2-bottom > div:hover {
   color: white;
   background-color: #23254c;
+  
+}
+
+#section2-bottom > div:hover > p {
+  color: white;
   
 }
 /* END: : section 2 */
