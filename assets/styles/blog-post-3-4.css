@@ -29,6 +29,26 @@ p {
   color: #ce93d8;
 }
 
+@keyframes move-upward {
+  20% {
+    top: 300%;
+  }
+  100% {
+    top: 100%;
+  }
+  
+}
+
+@keyframes move-downward {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+  
+}
+
 /* START: header */
 header {
   background-color: #23254c;
@@ -126,7 +146,14 @@ header > .container > nav > ul > li > div > a {
   right: 8%;
 }
 
-header > .container > nav > ul > li:hover > ul,
+header > .container > nav > ul > li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  animation: move-upward .5s ease-out;
+  top: 100%;
+}
+
+/* search-box */
 header > .container > nav > ul > li:hover > div {
   visibility: visible;
   opacity: 1;
@@ -233,9 +260,12 @@ header > .container > nav > ul > li:hover > div {
 
 #section2-middle > div > div > a > i {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
 }
 
 #section2-middle > div > div > h2 {
@@ -338,6 +368,11 @@ header > .container > nav > ul > li:hover > div {
 #section2-middle > div > .visuals:hover > a {
   visibility: visible;
   opacity: 1;
+}
+
+#section2-middle > div > .visuals:hover > a > i {
+  animation: move-downward .5s ease-out;
+  top: 50%;
 }
 
 #section2-bottom > div:first-of-type > a {
