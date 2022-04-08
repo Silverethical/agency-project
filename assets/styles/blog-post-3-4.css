@@ -21,6 +21,10 @@ hr {
   margin: 0;
 }
 
+p {
+  word-wrap: normal;
+}
+
 .fa-thin {
   color: #ce93d8;
 }
@@ -244,7 +248,6 @@ header > .container > nav > ul > li:hover > div {
 
 #section2-middle > div > div > p {
   color: #99a9b5;
-  word-wrap: normal;
   font-size: 15px;
   line-height: 30px;
 }
@@ -502,6 +505,10 @@ footer {
   justify-content: space-between;
 }
 
+#footer-middle > .container > div {
+  max-width: 30%;
+}
+
 #footer-middle > .container > div:first-of-type > img {
   width: 163px;
   margin-bottom: 48px;
@@ -541,14 +548,14 @@ footer {
   border-radius: 3px;
   outline: none;
   min-height: 25px;
-  min-width: 350px;
+  min-width: 95%;
   margin-bottom: 16px;
 }
 
 #footer-middle > .container > div > textarea {
   font: 15px montserrat, sans-serif;
   display: block;
-  max-width: 350px;
+  max-width: 95%;
   background-color: #665387;
   padding: 7px;
   border: 1px solid #a29cb7;
@@ -558,13 +565,13 @@ footer {
 }
 
 #footer-middle > .container > div:last-of-type > div > input {
-  min-width: 295px;
+  min-width: 80%;
   border-radius: 3px 0 0 3px;
 }
 
 #footer-middle > .container > div > a {
   font-weight: bold;
-  padding: 10px 164px;
+  padding: 10px 160px;
   border-radius: 4px;
   background-color: #ce93d8;
   transition-property: all;
@@ -585,7 +592,7 @@ footer {
 
 #footer-middle > .container > div:last-of-type > div > a {
   vertical-align: middle;
-  margin-left: -3px;
+  margin-left: -4px;
   font-size: 20px;
   font-weight: bold;
   padding: 9px 15px;
