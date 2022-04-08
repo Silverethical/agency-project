@@ -231,6 +231,7 @@ header > .container > nav > ul > li:hover > div {
 }
 
 #section2-bottom > div > h2 {
+  word-wrap: break-word;
   width: 80%;
   margin: 20px auto 15px;
   font-size: 25px;
@@ -261,12 +262,10 @@ header > .container > nav > ul > li:hover > div {
 #section2-bottom > div:hover {
   color: white;
   background-color: #23254c;
-  
 }
 
 #section2-bottom > div:hover > p {
   color: white;
-  
 }
 /* END: : section 2 */
 
@@ -783,7 +782,6 @@ footer {
 }
 
 #footer-middle {
-  /* margin-top: 700px; */
   padding: 100px 0;
   color: #fff;
   background: url("../images/home/footer-bg.jpg") no-repeat 0 0;
@@ -955,5 +953,4 @@ footer {
 #footer-bottom > .container > div:last-of-type > a:hover {
   color: #fff;
 }
-
 /* END: : footer */

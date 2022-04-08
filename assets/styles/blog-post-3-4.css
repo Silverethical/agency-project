@@ -491,7 +491,6 @@ footer {
 }
 
 #footer-middle {
-  /* margin-top: 700px; */
   padding: 100px 0;
   color: #fff;
   background: url("../images/home/footer-bg.jpg") no-repeat 0 0;
@@ -547,10 +546,10 @@ footer {
 }
 
 #footer-middle > .container > div > textarea {
+  font: 15px montserrat, sans-serif;
   display: block;
   max-width: 350px;
   background-color: #665387;
-  font-size: 15px;
   padding: 7px;
   border: 1px solid #a29cb7;
   border-radius: 3px;
@@ -578,15 +577,16 @@ footer {
   background-color: #aba2c1;
 }
 
-#footer-middle > .container > div:last-of-type > div {
-  position: relative;
+#footer-middle > .container > div:last-of-type > div > input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 }
 
 #footer-middle > .container > div:last-of-type > div > a {
+  vertical-align: middle;
+  margin-left: -3px;
   font-size: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 1%;
   font-weight: bold;
   padding: 9px 15px;
   border-radius: 0 3px 3px 0;
@@ -602,6 +602,7 @@ footer {
 }
 
 #footer-middle > .container > div:last-of-type > p:last-of-type {
+  margin-top: 16px;
   color: #99a9b5;
   font-size: 12px;
   font-weight: 100;
@@ -661,5 +662,4 @@ footer {
 #footer-bottom > .container > div:last-of-type > a:hover {
   color: #fff;
 }
-
 /* END: : footer */
