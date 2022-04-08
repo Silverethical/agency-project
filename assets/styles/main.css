@@ -210,52 +210,56 @@ header > .container > nav > ul > li:hover > div {
 
 #section2-bottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
-#section2-bottom > ul > li {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-#section2-bottom > ul > li:last-of-type {
-  margin-right: 0;
-}
-
-#section2-bottom > ul > li > a {
+#section2-bottom > div {
+  position: relative;
+  color: rgb(95, 114, 127);
   background-color: #f0f3f2;
-}
-
-#section2-bottom > ul > li > a > p {
-  line-height: 24px;
-  color: #6f808c;
-  background-color: #f0f3f2;
-  padding: 38px 48px;
+  padding: 40px 0;
+  max-width: 30%;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
 
-#section2-bottom > ul > li > a > p:first-of-type {
-  color: #434157;
-  font-size: 24px;
-  font-weight: 700;
+#section2-bottom > div > i {
+  color: #ce93d8;
+}
+
+#section2-bottom > div > h2 {
+  color: rgb(60, 57, 80);
+  width: 80%;
+  margin: 20px auto 15px;
+  font-size: 25px;
+  font-weight: bold;
   line-height: 40px;
-  padding-bottom: 0;
 }
 
-#section2-bottom > ul > li > a > p > img {
-  width: 50px;
-  filter: invert(10%) sepia(90%) saturate(5268%) hue-rotate(245deg)
-    brightness(109%) contrast(155%);
+#section2-bottom > div > p {
+  font-weight: 100;
+  line-height: 24px;
+  max-width: 80%;
+  margin: 0 auto;
+  word-wrap: normal;
 }
 
-#section2-bottom > ul > li > a:hover > p {
-  background-color: #3f4163;
+#section2-bottom > div > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#section2-bottom > div:hover {
   color: white;
+  background-color: #23254c;
+  
 }
-
 /* END: : section 2 */
 
 /* START: section 3 */
@@ -858,15 +862,16 @@ footer {
   background-color: #aba2c1;
 }
 
-#footer-middle > .container > div:last-of-type > div {
-  position: relative;
+#footer-middle > .container > div:last-of-type > div > input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 }
 
 #footer-middle > .container > div:last-of-type > div > a {
+  vertical-align: middle;
+  margin-left: -3px;
   font-size: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 1%;
   font-weight: bold;
   padding: 9px 15px;
   border-radius: 0 3px 3px 0;
@@ -882,6 +887,7 @@ footer {
 }
 
 #footer-middle > .container > div:last-of-type > p:last-of-type {
+  margin-top: 16px;
   color: #99a9b5;
   font-size: 12px;
   font-weight: 100;
