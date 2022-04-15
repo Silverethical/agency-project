@@ -29,26 +29,6 @@ p {
   color: #ce93d8;
 }
 
-@keyframes move-upward {
-  20% {
-    top: 300%;
-  }
-  100% {
-    top: 100%;
-  }
-  
-}
-
-@keyframes move-downward {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: 50%;
-  }
-  
-}
-
 /* START: header */
 header {
   background-color: #23254c;
@@ -146,10 +126,19 @@ header > .container > nav > ul > li > div > a {
   right: 8%;
 }
 
+@keyframes move-upward {
+  20% {
+    top: 300%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
 header > .container > nav > ul > li:hover > ul {
   visibility: visible;
   opacity: 1;
-  animation: move-upward .5s ease-out;
+  animation: move-upward 0.5s ease-out;
   top: 100%;
 }
 
@@ -370,8 +359,17 @@ header > .container > nav > ul > li:hover > div {
   opacity: 1;
 }
 
+@keyframes move-downward {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
 #section2-middle > div > .visuals:hover > a > i {
-  animation: move-downward .5s ease-out;
+  animation: move-downward 0.5s ease-out;
   top: 50%;
 }
 
