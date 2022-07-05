@@ -32,6 +32,8 @@ p {
 /* START: header */
 header {
   background-color: #23254c;
+  background: url("../images/home/space-bg.jpg") no-repeat 0 0;
+  background-size: cover;
 }
 
 header > .container {
@@ -67,6 +69,7 @@ header > .container > nav > ul > li > ul {
   left: 0;
   min-width: max-content;
   font-weight: normal;
+  z-index: 1;
   visibility: hidden;
   opacity: 0;
   transition-property: all;
@@ -126,20 +129,9 @@ header > .container > nav > ul > li > div > a {
   right: 8%;
 }
 
-@keyframes move-upward {
-  20% {
-    top: 300%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
 header > .container > nav > ul > li:hover > ul {
   visibility: visible;
   opacity: 1;
-  animation: move-upward 0.5s ease-out;
-  top: 100%;
 }
 
 /* search-box */
@@ -156,6 +148,7 @@ header > .container > nav > ul > li:hover > div {
   background-size: cover;
   color: white;
   background-color: rgb(142, 70, 170);
+  overflow: hidden;
 }
 
 #section1 > .container {
@@ -216,8 +209,8 @@ header > .container > nav > ul > li:hover > div {
 #section1 > .container > div > img:last-of-type {
   position: absolute;
   animation: rocket-upward 7s ease-in;
-  top: -40%;
-  right: -110%;
+  top: -900%;
+  right: -900%;
 }
 /* END: : section 1 */
 
